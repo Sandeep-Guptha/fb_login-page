@@ -1,3 +1,4 @@
+import 'dart:html';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -51,27 +52,23 @@ class MyApp extends StatelessWidget {
                               hintText: "Enter your Password",
                               labelStyle: TextStyle(
                                   color: Colors.black, fontSize: 15)))),
-                  Container(
-                    height: 40,
-                    width: 320,
-                    alignment: Alignment.center,
+                  // ignore: deprecated_member_use
+                  RaisedButton(
+                    onPressed: () {},
+                    color: Colors.blue.shade700,
+                    //Width: 320,
+                    splashColor: Colors.black45,
                     child: Text(
                       "Log In",
                       style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16),
-                    ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(5),
-                      color: Colors.blue.shade700,
+                          fontWeight: FontWeight.bold, color: Colors.white),
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(top: 20),
+                    margin: EdgeInsets.only(top: 15),
                     alignment: Alignment.center,
                     child: Text(
-                      "Forgotten Password? ",
+                      "Forgot Password?",
                       style: TextStyle(
                         color: Colors.blue.shade700,
                       ),
@@ -87,23 +84,16 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Container(
-                    height: 40,
-                    width: 200,
-                    margin: EdgeInsets.only(top: 10),
-                    alignment: Alignment.center,
+                  // ignore: deprecated_member_use
+                  FlatButton(
+                    onPressed: () {},
+                    color: Colors.green,
                     child: Text(
                       "Create New Account",
                       style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 15),
+                          fontWeight: FontWeight.bold, color: Colors.white),
                     ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(5),
-                      color: Colors.green.shade700,
-                    ),
-                  ),
+                  )
                 ],
               ),
             )));
