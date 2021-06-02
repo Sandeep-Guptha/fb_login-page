@@ -1,4 +1,4 @@
-import 'dart:html';
+//import 'dart:html';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -78,7 +78,7 @@ class _FormsState extends State<Forms> {
                 validator: (value) {
                   if (value.isEmpty || value == null) {
                     return "Please enter the Password";
-                  } else if (value != "Sandy@009") {
+                  } else if (value != "12345678") {
                     return "Please enter the correct Password";
                   } else {}
                   return null;
@@ -102,7 +102,7 @@ class _FormsState extends State<Forms> {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(top: 15),
+            margin: EdgeInsets.only(top: 10),
             alignment: Alignment.center,
             child: Text(
               "Forgot Password?",
@@ -112,7 +112,7 @@ class _FormsState extends State<Forms> {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(top: 15),
+            margin: EdgeInsets.only(top: 9),
             alignment: Alignment.center,
             child: Text(
               "or",
